@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--카테고리 관리 페이지-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile POS"
+        android:gravity="center"
+        android:background="#3BE3BD"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:id="@+id/mainTitle"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ctgBf"
+        android:hint="기존카테고리명"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ctgName"
+        android:hint="카테고리명"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="362dp">
+
+        <Button
+            android:id="@+id/addCtg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="#3BE3BD"
+            android:text="추가" />
+
+        <Button
+            android:id="@+id/editCtg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="#3BE3BD"
+            android:text="수정" />
+
+        <Button
+            android:id="@+id/delCtg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="#3BE3BD"
+            android:text="삭제" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/goMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#3BE3BD"
+            android:text="돌아가기" />
+
+    </LinearLayout>
+
+</LinearLayout>

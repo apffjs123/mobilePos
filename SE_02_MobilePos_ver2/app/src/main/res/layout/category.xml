@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CategoryAct"
+    android:orientation="vertical">
+
+    <!--카테고리-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile POS"
+        android:gravity="center"
+        android:background="#3BE3BD"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:id="@+id/mainTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginRight="5dp"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:background="#3BE3BD"
+            android:text="치킨"
+            android:textColor="@android:color/white"
+            android:textSize="43dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnChick"/>
+
+        <Button
+            android:background="#3BE3BD"
+            android:text="피자"
+            android:layout_height="wrap_content"
+            android:layout_width="125dp"
+            android:textColor="@android:color/white"
+            android:textSize="43dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btnPizza"/>
+        <Button
+
+            android:background="#3BE3BD"
+            android:text="음료"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="43dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnSide"></Button>
+        "/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ctgChick"
+            android:visibility="visible">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="후라이드 16000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/btnFried"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="양념치킨 17000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btnSpicy"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="간장치킨 17000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnSoy"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="반반치킨 17000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btnHalf"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ctgPizza"
+            android:visibility="invisible">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="치즈피자 20000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/btnChz"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="페퍼로니 20000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btnPep"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="포테이토 22000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnPot"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="콤비네이션 22000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btnComb"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ctgSide"
+            android:visibility="invisible">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="코카콜라 2000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/btnCoke"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="스프라이트 2000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btnCider"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="맥주 1700cc 10000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnBeer"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#91F3E1"
+                android:text="소주 3000원"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btnSoju"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#91F3E1"
+            android:text="돌아가기"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:id="@+id/goMain"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--메인화면 페이지-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile POS"
+        android:gravity="center"
+        android:background="#3BE3BD"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:id="@+id/mainTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginRight="20dp"
+            android:background="#3BE3BD"
+            android:text="카테\n고리"
+            android:textColor="@android:color/white"
+            android:textSize="43dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/btnCtg"/>
+
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:background="#3BE3BD"
+            android:text="주문\n내역"
+            android:textColor="@android:color/white"
+            android:textSize="43dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/btnOrder"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginRight="20dp"
+            android:background="#3BE3BD"
+            android:text="카테고리 관리"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btnMng"/>
+
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:background="#3BE3BD"
+            android:text="메뉴\n관리"
+            android:textColor="@android:color/white"
+            android:textSize="43dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btnMenu"/>
+    </LinearLayout>
+</LinearLayout>

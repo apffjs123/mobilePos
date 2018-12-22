@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MenuEdit"
+    android:orientation="vertical">
+
+    <!--메뉴 수정 페이지-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile POS"
+        android:gravity="center"
+        android:background="#3BE3BD"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:id="@+id/mainTitle"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3BE3BD"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="치킨"
+            android:id="@+id/btnChick"
+            android:textSize="30dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3BE3BD"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="피자"
+            android:id="@+id/btnPizza"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3BE3BD"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnSide"
+            android:layout_marginLeft="10dp"
+
+            android:text="음료"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:id="@+id/menuChick">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/chickNameBf"
+                android:hint="기존메뉴"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/chickName"
+                android:hint="메뉴 이름"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/chickPriceBf"
+                android:hint="기존가격"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/chickPrice"
+                android:hint="메뉴가격"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#3BE3BD"
+                android:layout_marginHorizontal="10dp"
+                android:text="수정"
+                android:id="@+id/editChick"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:id="@+id/menuPizza">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/pizzaNameBf"
+                android:hint="기존메뉴"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/pizzaName"
+                android:hint="메뉴 이름"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/pizzaPriceBf"
+                android:hint="기존가격"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/pizzaPrice"
+                android:hint="메뉴가격"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#3BE3BD"
+                android:layout_marginHorizontal="10dp"
+                android:text="수정"
+                android:id="@+id/editPizza"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:orientation="vertical"
+            android:id="@+id/menuSide">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/sideNameBf"
+                android:hint="기존메뉴"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/sideName"
+                android:hint="메뉴 이름"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/sidePriceBf"
+                android:hint="기존가격"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/sidePrice"
+                android:hint="메뉴가격"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#3BE3BD"
+                android:layout_marginHorizontal="10dp"
+                android:text="수정"
+                android:id="@+id/editSide"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뒤로가기"
+            android:id="@+id/goBack"
+
+            android:layout_marginRight="20dp"
+            android:background="#3BE3BD" />
+
+        <Button
+            android:id="@+id/goMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="20dp"
+            android:text="메인으로"
+            android:background="#3BE3BD"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

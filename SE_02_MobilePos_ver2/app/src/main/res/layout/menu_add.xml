@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MenuAdd"
+    android:orientation="vertical">
+
+    <!--메뉴 추가 페이지-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile POS"
+        android:gravity="center"
+        android:background="#3BE3BD"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:id="@+id/mainTitle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3BE3BD"
+        android:layout_marginTop="20dp"
+        android:text="치킨"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/chickName"
+            android:hint="메뉴 이름"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/chickPrice"
+            android:hint="메뉴가격"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3BE3BD"
+            android:layout_marginHorizontal="10dp"
+            android:text="추가"
+            android:id="@+id/addChick"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3BE3BD"
+        android:layout_marginTop="20dp"
+        android:text="피자"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/pizzaName"
+            android:hint="메뉴 이름"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/pizzaPrice"
+            android:hint="메뉴가격"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3BE3BD"
+            android:layout_marginHorizontal="10dp"
+            android:text="추가"
+            android:id="@+id/addPizza"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3BE3BD"
+        android:layout_marginTop="20dp"
+        android:text="음료"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/sideName"
+            android:hint="메뉴 이름"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/sidePrice"
+            android:hint="메뉴가격"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3BE3BD"
+            android:layout_marginHorizontal="10dp"
+            android:text="추가"
+            android:id="@+id/addSide"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뒤로가기"
+            android:id="@+id/goBack"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="#3BE3BD" />
+
+        <Button
+            android:id="@+id/goMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:text="메인으로"
+            android:background="#3BE3BD"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
